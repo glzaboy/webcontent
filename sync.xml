@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sync>
+    <target>
+        <path>/var/www/crudelion_static/static</path>
+        <clean>false</clean>
+        <exclude>
+        </exclude>
+    </target>
+    <source>
+        <path>/root/crudelion_static</path>
+        <exclude>
+            <value>/.git</value>
+            <value>/sync.xml</value>
+        </exclude>
+    </source>
+</sync>

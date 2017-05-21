@@ -7,7 +7,7 @@
         </exclude>
     </target>
     <source>
-        <path>/root/crudelion_static</path>
+        <path>/root/webcontent.git</path>
         <exclude>
             <value>/.git</value>
             <value>/sync.xml</value>

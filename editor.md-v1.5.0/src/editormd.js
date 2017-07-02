@@ -1066,6 +1066,13 @@
                         width    : editor.width() + "px",
                         left     : ($window.width() - editor.width()) / 2 + "px"
                     });
+                    if(editor.offset().left>0){
+                        toolbar.css({
+                            position : "fixed",
+                            width    : editor.width() + "px",
+                            left     : editor.offset().left  + "px"
+                        });
+                    }
                 }
                 else
                 {

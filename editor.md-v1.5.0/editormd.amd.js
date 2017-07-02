@@ -2711,6 +2711,9 @@
                     height   : $(window).height()
                 }).addClass(fullscreenClass);
 
+                //fix fullscreen bug
+                $(window).trigger("scroll");
+
                 this.resize();
     
                 $.proxy(settings.onfullscreen, this)();
@@ -2721,6 +2724,7 @@
             {           
                 $(window).unbind("keyup", escHandle); 
                 this.fullscreenExit();
+                $(window).trigger("scroll");
             }
 
             return this;
